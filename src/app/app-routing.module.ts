@@ -1,17 +1,15 @@
-import { InstrumentDetailComponent } from './views/instrument-detail/instrument-detail.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { InstrumentsCardsComponent } from './components/instruments-cards/instruments-cards.component';
-import { RegisterComponent } from './views/register/register.component';
-import { CartComponent } from './views/cart/cart.component';
+import { StorefrontInstrumentsComponent } from './pages/instruments/storefront-instruments/storefront-instruments.component';
+import { InstrumentDetailComponent } from './pages/instruments/instrument-detail/instrument-detail.component';
+import { InstrumentRegisterComponent } from './pages/instruments/instrument-register/instrument-register.component';
 
 
 const routes: Routes = [
-  { path: 'store', component: InstrumentsCardsComponent },
-  { path: 'register', component: RegisterComponent },
+  { path: 'store', component: StorefrontInstrumentsComponent },
+  { path: 'register', component: InstrumentRegisterComponent },
   { path: 'store/:id', component: InstrumentDetailComponent },
-  { path: 'cart', component: CartComponent }
 ]
 
 @NgModule({
