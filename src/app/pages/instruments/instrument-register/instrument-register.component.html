@@ -1,4 +1,5 @@
 <app-nav-bar></app-nav-bar>
+
 <mat-card class="mat-elevation-z0">
     <mat-form-field class="fields" appearance="outline">
         <mat-label>Nome</mat-label>
@@ -13,7 +14,7 @@
     <mat-form-field class="fields" appearance="outline">
         <mat-label>Categorias</mat-label>
         <mat-select [(ngModel)]="instrument.category">
-            <mat-option *ngFor="let category of categories" [value]="category">
+            <mat-option *ngFor="let category of instrumentCategories" [value]="category">
                 {{category}}
             </mat-option>
         </mat-select>

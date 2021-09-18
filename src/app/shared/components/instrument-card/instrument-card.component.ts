@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Instrument } from 'src/app/pages/instruments/shared/instrument.model';
 
 @Component({
   selector: 'app-instrument-card',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./instrument-card.component.scss']
 })
 export class InstrumentCardComponent implements OnInit {
+
+  @Input() instrument: Instrument;
 
   constructor() { }
 

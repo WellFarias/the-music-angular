@@ -11,6 +11,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatRadioModule } from '@angular/material/radio';
+import { MatBadgeModule } from '@angular/material/badge';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { MatRadioModule } from '@angular/material/radio';
     MatSelectModule,
     MatToolbarModule,
     MatCardModule,
+    MatBadgeModule
   ],
   exports: [
     MatTabsModule,
@@ -40,6 +42,7 @@ import { MatRadioModule } from '@angular/material/radio';
     MatSelectModule,
     MatToolbarModule,
     MatCardModule,
+    MatBadgeModule
   ]
 })
 export class MaterialModule { }

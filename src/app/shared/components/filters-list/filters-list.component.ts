@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FilterProducts } from 'src/app/pages/instruments/shared/instrument.model';
 
 @Component({
   selector: 'app-filters-list',
@@ -7,40 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FiltersListComponent implements OnInit {
 
-  filterInstruments = [
-    {
-      text: 'Guitarra',
-    },
-    {
-      text: 'Violão',
-    },
-    {
-      text: 'Baixo',
-    },
-    {
-      text: 'Bateria',
-    },
-    {
-      text: "Teclas"
-    },
-    {
-      text: 'Ukulele',
-    },
-    {
-      text: 'Amplificadores',
-    },
-    {
-      text: "Acessórios",
-    },
-    {
-      text: 'Microfones',
-    },
-  ]
-
+  public filterProducts: Array<FilterProducts>;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.filterProducts = FilterProducts.products
   }
 
 }

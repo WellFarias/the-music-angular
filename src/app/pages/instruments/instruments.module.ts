@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { StorefrontInstrumentsComponent } from './storefront-instruments/storefront-instruments.component';
 import { InstrumentDetailComponent } from './instrument-detail/instrument-detail.component';
@@ -12,6 +13,7 @@ import { FormsModule } from '@angular/forms';
     InstrumentRegisterComponent
   ],
   imports: [
+    CommonModule,
     SharedModule,
     FormsModule,
   ],

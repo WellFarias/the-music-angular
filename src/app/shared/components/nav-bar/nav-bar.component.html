@@ -4,20 +4,24 @@
 
         <div style="flex:auto"></div>
 
-        <input type="text" placeholder="O que você procura ?">
+        <input *ngIf="search" type="text" placeholder="O que você procura ?">
 
         <div style="flex:auto"></div>
 
         <a routerLink="/cart">
-            <button mat-fab style="background-color: black;">
-                <span class="material-icons">shopping_cart</span>
+          <button mat-fab style="background-color: black;">
+                <span
+                  matBadge="2"
+                  matBadgeSize="small"
+                  class="material-icons"
+                >shopping_cart</span>
             </button>
         </a>
-
-        <a>
-          <button mat-fab style="background-color: black;">
-            <span class="material-icons">person</span>
-          </button>
-        </a>
+        <div style="display: flex; align-items: center;">
+          <span style="color: white; font-size: xx-small; margin-right: 5px;" >Olá Well !!</span>
+          <div class="person">
+            <img src="https://i.imgur.com/KJqz9Lx.jpg" class="perfil">
+          </div>
+        </div>
     </mat-toolbar-row>
 </mat-toolbar>

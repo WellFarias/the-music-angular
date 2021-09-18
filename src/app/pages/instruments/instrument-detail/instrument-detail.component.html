@@ -1,54 +1,31 @@
-<!-- <app-nav-bar></app-nav-bar> -->
+<app-nav-bar></app-nav-bar>
 
 <mat-card class="mat-elevation-z0">
-    <div class="box-title">
-        <mat-card-title style="font-size: 20px; font-weight: 500; margin-top: 10px;">Detalhes do produto</mat-card-title>
-    </div>
-    <!-- <div class="box-detail">
-        <div class="box-detail-img">
-            <img src="{{instrument.picture}}" alt="image-instrument">
-        </div>
-        <div class="box-detail-contant-info">
-            <div class="box-detail-info">
-                <mat-card-title>{{instrument.name}}</mat-card-title>
-                <p>Marca: <strong>{{instrument.brand}}</strong></p>
-                <p>Cor: <strong>{{instrument.color}}</strong></p>
-                <p>Origem: <strong>{{instrument.from}}</strong></p>
-                <p>Produto: <strong>{{instrument.isUsed ? "Novo" : "Usado"}}</strong></p>
-                <p *ngIf="instrument.delivery">Pronta entrega: <span class="material-icons">local_shipping</span></p>
-                <p>{{instrument.description}}</p>
-                <mat-card-title style="margin-top: 5%;">{{instrument.price}}</mat-card-title>
-                <p>em até {{instrument.plots}}</p>
-            </div>
-            <div class="box-buy-button">
-                <button class="buy-button" mat-raised-button color="primary">
-                    Comprar<span class="material-icons icon">shopping_bag</span>
-                </button>
-            </div>
-        </div>
-    </div> -->
-
-    <div class="box-detail">
+  <div class="box-title">
+      <mat-card-title style="font-size: 20px; font-weight: 500; margin-top: 10px;">Detalhes do produto</mat-card-title>
+  </div>
+  <div class="box-detail">
       <div class="box-detail-img">
-          <img src="https://www.fender.com.br/imgs/produtos/gra/fender_10171998.jpg" alt="image-instrument">
+          <img src="{{instrument.picture}}" alt="image-instrument">
       </div>
       <div class="box-detail-contant-info">
-          <div class="box-detail-info">
-              <mat-card-title>Guitarra Fender Stratocaster Custom Shop</mat-card-title>
-              <p>Marca: <strong>Fender</strong></p>
-              <p>Cor: <strong>Sunbust</strong></p>
-              <p>Origem: <strong>EUA</strong></p>
-              <p>Produto: <strong>Produto Novo</strong></p>
-              <p *ngIf="instrument.delivery">Pronta entrega: <span class="material-icons">local_shipping</span></p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum minus aspernatur magni dolores voluptatem! Autem aliquid, architecto harum iusto, ab necessitatibus provident ratione cumque facere non dignissimos itaque voluptas ut?</p>
-              <mat-card-title style="margin-top: 5%;">R$ 16.000,00</mat-card-title>
-              <p>em até 12x de 1.000,00</p>
-          </div>
-          <div class="box-buy-button">
-              <button class="buy-button" mat-raised-button color="primary">
-                  Comprar<span class="material-icons icon">shopping_bag</span>
-              </button>
-          </div>
+        <div class="box-detail-info">
+            <mat-card-title>{{instrument.name}}</mat-card-title>
+            <p>Marca: <strong>{{instrument.brand}}</strong></p>
+            <p>Cor: <strong>{{instrument.color}}</strong></p>
+            <p>Origem: <strong>{{instrument.from}}</strong></p>
+            <p>Produto: <strong>{{instrument.isUsed ? "Novo" : "Usado"}}</strong></p>
+            <p *ngIf="instrument.delivery">Pronta entrega: <span class="material-icons">local_shipping</span></p>
+            <p>{{instrument.description}}</p>
+            <mat-card-title style="margin-top: 5%;">{{instrument.price}}</mat-card-title>
+            <p>em até {{instrument.plots}}</p>
+        </div>
+        <div class="box-buy-button">
+            <button class="buy-button" mat-raised-button color="primary">
+                Comprar<span class="material-icons icon">shopping_bag</span>
+            </button>
+        </div>
       </div>
   </div>
 </mat-card>
+

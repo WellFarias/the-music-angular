@@ -4,6 +4,10 @@
   margin: 7px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .card-content:hover {
   transform: translateY(-3px);
   transition: 0.5s;

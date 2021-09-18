@@ -11,3 +11,18 @@ input {
   padding: 1rem;
 }
 
+.person {
+  height: 35px;
+  width: 35px;
+  display: inline-flex;
+  border: 1px solid #fff;
+  border-radius: 50px;
+}
+
+.perfil {
+  border-radius: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Instrument } from '../shared/instrument.model';
+import { Instrument, InstrumentCategories } from '../shared/instrument.model';
 import { InstrumentService } from '../shared/instrument.service';
 
 @Component({
@@ -13,18 +13,13 @@ export class InstrumentRegisterComponent implements OnInit {
 
   money: ""
 
-  categories: Array<string> = [
-    'Cordas',
-    'Teclas',
-    'Percussão',
-    'Acessórios',
-    'Pedais',
-    'Amplificadores'
-]
+  instrumentCategories: Array<InstrumentCategories>;
+
 
   constructor(private instrumentService: InstrumentService, private router: Router) { }
 
   ngOnInit(): void {
+    this.instrumentCategories = InstrumentCategories.categories
   }
 
   save(instrument: Instrument): void {
